@@ -4,6 +4,13 @@ var cors = require('cors');
 var app = express();
 app.use(cors({ origin: 'https://www.freecodecamp.org' }));
 
+app.get("/", (_req, res) => {
+    res.json({
+        message: "Welcome to the Timestamp Microservice API. Use /api/ for current date or /api/:date for a specific date.",
+        source: "Check out the source code at https://github.com/GregorDeCillia/fcc-timestamp"
+    });
+})
+
 app.get('/api/', function (_req, res) {
     const date = new Date();
     res.json({
