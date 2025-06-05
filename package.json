@@ -15,5 +15,9 @@
     "url": "https://github.com/GregorDeCillia/fcc-timestamp/issues"
   },
   "homepage": "https://github.com/GregorDeCillia/fcc-timestamp#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0"
+  }
 }
